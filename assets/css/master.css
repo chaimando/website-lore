@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import "footer.css";
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: #ABDBFF;
+  color: #FFDEAC;
+  color: #FFF8EE;
+  font-family: 'Playfair Display', serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../../img/header3.JPG") no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #5AA5DD;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  text-shadow: 0 1px 2px #555;
+  position: fixed;
+  float: left;
+  margin: 14px 15px;
+  color: #5AA5DD;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #5AA5DD;
+  padding: 1px 5px;
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0,0,0,0);
+  overflow: hidden;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  transition: 0.5s;
+}
+
+nav.color ul {
+  background: rgba(0,0,0,1);
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.menu-icon {
+  width: 100%;
+  background: rgba(0,0,0,1);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #FFF;
+  display: none;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 37vh;
+}
+
+#intro h1 {
+  font-size: 4em;
+  margin: 0;
+  font-family: 'Courgette', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Pacifico', cursive;
+}
+
+#intro .p-intro {
+  color:inherit;
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  word-spacing: 4px;
+  padding: 20px 0 0;
+}
+
+
+@media (max-width: 720px) {
+  #intro h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 530px) {
+  #intro h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin-top: 12px;
+  }
+
+  nav ul {
+    max-height: 0px;
+    background: rgba(0,0,0,1);
+  }
+
+  nav.color ul {
+    background: rgba(0,0,0,1);
+  }
+
+  .showing {
+    max-height: 24em;
+  }
+
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 22px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+}
